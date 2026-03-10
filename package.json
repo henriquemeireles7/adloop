@@ -1,0 +1,24 @@
+{
+  "name": "adloop",
+  "version": "0.0.1",
+  "description": "Self-improving Meta ads management CLI for infoproduct businesses",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "adloop": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "lint": "eslint src/",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "keywords": ["meta-ads", "facebook-ads", "cli", "automation"],
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}
